@@ -42,11 +42,11 @@ def home_index():
     <body>
     <h2>Home Navigation Page</h2>
     <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/premade_workouts">Workouts</a></li>
-    <li><a href="/premade_meal_plans">Meal Plans</a></li>
-    <li><a href="/tools">Tools</a></li>
-    <li><a href="/about">About</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/premade_workouts">Workouts</a></li>
+        <li><a href="/premade_meal_plans">Meal Plans</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/about">About</a></li>
     </ul>
     </body>
     </html>
