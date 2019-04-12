@@ -6,6 +6,7 @@ app = Flask(__name__)
 def home_index():
     return """
     <html>
+    <title>Home - Workout App</title>
     <head>
     <style>
     ul
@@ -64,7 +65,7 @@ def premade_workouts():
         <li><a href="/train_your_body_in_5_minutes">Train Your Body in 5 Minutes</a></li>
         <li><a href="/improve_your_endurance">Improve Your Endurance</a></li>
     <p>Pick your Workout Playlist!</p>
-       <li><a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a></li>
+        <li><a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a></li>
         <li><a href="https://www.youtube.com/watch?v=o3WdLtpWM_c&list=PLMmqTuUsDkRINEEFXWy7Ne2897vCdxJg1">Techno</a></li>
         <li><a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek&list=PL8fAVuusm10qMUzauh8UoYkzrRHO0KU1z">Rock</a></li>
         <li><a href="https://www.youtube.com/watch?v=VkloKZmQ3o4&list=PL6s8R-CiO2_zB85o0H4PSZeebk5P-PUWx">Country</a></li>
@@ -73,7 +74,7 @@ def premade_workouts():
         <li><a href="https://www.youtube.com/watch?v=FEAZyRfgevc">EDM</a></li>
         <li><a href="https://www.youtube.com/watch?v=EFJ7kDva7JE&list=PLxvodScTx2RtAOoajGSu6ad4p8P8uXKQk">Classical</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -90,7 +91,7 @@ def meal_plans():
         <li><a href="/the_get-lean_meal_plan">The Get-Lean Meal Plan</a></li>
         <li><a href="/the_skinny_guy_muscle-gain_plan">The Skinny Guy Muscal-Gain Plan</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -114,7 +115,8 @@ def warm_up():
         <li><a href="https://www.ideafit.com/exercise-library/inverted-hamstring-moving-forward">inverted hamstring moving forward</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/heel-to-glute-with-arm-reach-contra">heel to glute - with arm reach (contra)</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/premade_workouts">Back to previous page</a>
+    <br><a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -140,7 +142,8 @@ def build_total_body_strength():
         <li><a href="https://www.ideafit.com/exercise-library/bent-over-row-1-arm-1-leg-dumbbell-contra">bent over row - 1 arm 1 leg dumbbell (contra)</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/rotational-crunch-stability-ball">rotational crunch (stability ball)</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/premade_workouts">Back to previous page</a>
+    <br><a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -159,7 +162,8 @@ def train_your_body_in_5_minutes():
         <li><a href="https://www.ideafit.com/exercise-library/push-up-2">push up</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/pillar-bridge-with-arm-lift">pillar bridge - with arm lift</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/premade_workouts">Back to previous page</a>
+    <br><a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -180,7 +184,8 @@ def improve_your_endurance():
         <li><a href="https://www.ideafit.com/exercise-library/mini-band-external-rotation">mini band - external rotation</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/ys-floor-0">ys - floor</a></li>
     </ul>
-    <a href="/">Back to home</a>
+    <a href="/premade_workouts">Back to previous page</a>
+    <br><a href="/">Back to homepage</a>
     <h6>©All Rights reserved by original authors.</h6>
     </html>
     """
@@ -247,7 +252,8 @@ def the_beginner_meal_plan():
             <dd>- Bell Pepper: 1/2</dd>
             <dd>- Olive Oil (Extra virgin): 2 tbsp</dd>
         </dl>
-        <a href="/">Back to home</a>
+        <a href="/premade_meal_plans">Back to previous page</a>
+        <br><a href="/">Back to homepage</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
@@ -314,7 +320,8 @@ def the_get_lean_meal_plan():
             <dd><li><strong>Mushrooms Alternate Options: </strong>3 stalks asparagus, 1 cup chopped baby spinach, 3 baby zucchini, or 1 diced plum tomato</li></dd>
             <dd><li><strong>Broccoli Alternate Options: </strong>2 cups cubed eggplant, 1 diced yellow pepper or summer squash, or 1 diced carrot + 1 diced stalk of celery</li></dd>
         </dl>
-        <a href="/">Back to home</a>
+        <a href="/premade_meal_plans">Back to previous page</a>
+        <br><a href="/">Back to homepage</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
@@ -389,7 +396,8 @@ def the_skinny_guy_muscle_gain_plan():
             <dd><li><strong>Tilapia Alternate Options: </strong>5 oz tuna steak, 7 oz cod, or 6 oz shrimp</li></dd>
             <dd><li><strong>Yams Alternate Options: </strong>1/3 cup Amaranth, 1/3 cup wheat berries, or 1/3 cup pearl barley</li></dd>
         </dl>
-        <a href="/">Back to home</a>
+        <a href="/premade_meal_plans">Back to previous page</a>
+        <br><a href="/">Back to homepage</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
@@ -401,7 +409,7 @@ def tools():
     <html>
     <title>Tools</title>
     <h1>Put links of tools.</h1>
-    <a href="/">Back to home</a>
+    <a href="/">Back to homepage</a>
     </html>
     """
 
@@ -411,7 +419,7 @@ def about():
     <html>
     <title>About This App</title>
     <h1>Insert App Description.</h1>
-    <a href="/">Back to home</a>
+    <a href="/">Back to homepage</a>
     </html>
     """
     
