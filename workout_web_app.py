@@ -2,33 +2,95 @@
 from flask import Flask
 app = Flask(__name__)
 
-
 @app.route('/')
-def premade_workout():
+def home_index():
     return """
-    <title>Premade Workouts and Meal Plans</title>
-    <h1>Hello! Welcome to the Premade Workouts and Meal Plans Page.</h1>
-    <h2>Premade workouts and meal plans are from online websites.</h2>
-    <p>Pick your Workout Types!</p>
+    <html>
+    <head>
+    <style>
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #009933;
+    }
+
+    li
+    {
+        float: left;
+    }
+    
+    li a
+    {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover
+    {
+        background-color: #33ff77;
+    }
+    </style>
+    </head>
+
+    <body>
+    <h2>Home Navigation Page</h2>
+    <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/premade_workouts">Workouts</a></li>
+    <li><a href="/premade_meal_plans">Meal Plans</a></li>
+    <li><a href="/tools">Tools</a></li>
+    <li><a href="/about">About</a></li>
+    </ul>
+    </body>
+    </html>
+    """
+
+@app.route('/premade_workouts')
+def premade_workouts():
+    return """
+    <html>
+    <title>Premade Workouts</title>
+    <h1>Hello! Welcome to the Premade Workouts Page.</h1>
+    <p>Pick your Workouts!</p>
     <ul>
         <li><a href="/warm_up">Warm Up</a></li>
         <li><a href="/build_total_body_strength">Build Total-Body Strength</a></li>
         <li><a href="/train_your_body_in_5_minutes">Train Your Body in 5 Minutes</a></li>
         <li><a href="/improve_your_endurance">Improve Your Endurance</a></li>
     </ul>
-    <p>Pick your Meal plan!</p>
+    <a href="/">Back to home</a>
+    <h6>©All Rights reserved by original authors.</h6>
+    </html>
+    """
+
+@app.route('/premade_meal_plans')
+def meal_plans():
+    return """
+    <html>
+    <title>Premade Meal Plans</title>
+    <h1>Hello! Welcome to the Premade Meal Plans Page.</h1>
+    <p>Pick your Meal plans!</p>
     <ul>
         <li><a href="/the_beginner_meal_plan">The Beginner Meal Plan</a></li>
         <li><a href="/the_get-lean_meal_plan">The Get-Lean Meal Plan</a></li>
         <li><a href="/the_skinny_guy_muscle-gain_plan">The Skinny Guy Muscal-Gain Plan</a></li>
     </ul>
+    <a href="/">Back to home</a>
     <h6>©All Rights reserved by original authors.</h6>
+    </html>
     """
 
 # Workouts start here.
-@app.route("/warm_up")
+@app.route('/warm_up')
 def warm_up():
     return """
+    <html>
     <title>Premade Workouts</title>
     <h3>You can pick the following exercises: </h3>
     <ul>
@@ -43,12 +105,15 @@ def warm_up():
         <li><a href="https://www.ideafit.com/exercise-library/inverted-hamstring-moving-forward">inverted hamstring moving forward</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/heel-to-glute-with-arm-reach-contra">heel to glute - with arm reach (contra)</a></li>
     </ul>
+    <a href="/">Back to home</a>
     <h6>©All Rights reserved by original authors.</h6>
+    </html>
     """
 
-@app.route("/build_total_body_strength")
+@app.route('/build_total_body_strength')
 def build_total_body_strength():
     return """
+    <html>
     <title>Premade Workouts</title>
     <h3>You can pick the following exercises: </h3>
     <ul>
@@ -66,12 +131,15 @@ def build_total_body_strength():
         <li><a href="https://www.ideafit.com/exercise-library/bent-over-row-1-arm-1-leg-dumbbell-contra">bent over row - 1 arm 1 leg dumbbell (contra)</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/rotational-crunch-stability-ball">rotational crunch (stability ball)</a></li>
     </ul>
+    <a href="/">Back to home</a>
     <h6>©All Rights reserved by original authors.</h6>
+    </html>
     """
 
-@app.route("/train_your_body_in_5_minutes")
+@app.route('/train_your_body_in_5_minutes')
 def train_your_body_in_5_minutes():
     return """
+    <html>
     <title>Premade Workouts</title>
     <h3>You can pick the following exercises: </h3>
     <ul>
@@ -82,12 +150,15 @@ def train_your_body_in_5_minutes():
         <li><a href="https://www.ideafit.com/exercise-library/push-up-2">push up</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/pillar-bridge-with-arm-lift">pillar bridge - with arm lift</a></li>
     </ul>
+    <a href="/">Back to home</a>
     <h6>©All Rights reserved by original authors.</h6>
+    </html>
     """
 
-@app.route("/improve_your_endurance")
+@app.route('/improve_your_endurance')
 def improve_your_endurance():
     return """
+    <html>
     <title>Premade Workouts</title>
     <h3>You can pick the following exercises: </h3>
     <ul>
@@ -100,16 +171,18 @@ def improve_your_endurance():
         <li><a href="https://www.ideafit.com/exercise-library/mini-band-external-rotation">mini band - external rotation</a></li>
         <li><a href="https://www.ideafit.com/exercise-library/ys-floor-0">ys - floor</a></li>
     </ul>
+    <a href="/">Back to home</a>
     <h6>©All Rights reserved by original authors.</h6>
+    </html>
     """
 
 # Meal Plans start here.
-@app.route("/the_beginner_meal_plan")
+@app.route('/the_beginner_meal_plan')
 def the_beginner_meal_plan():
     # source: https://www.bodybuilding.com/content/meal-plan-for-every-guy.html
     return """
-    <title>Premade Meal Plans</title>
     <html>
+    <title>Premade Meal Plans</title>
     <body>
         <h2>The Beginner Meal Plan</h2>
         <dl>
@@ -165,17 +238,18 @@ def the_beginner_meal_plan():
             <dd>- Bell Pepper: 1/2</dd>
             <dd>- Olive Oil (Extra virgin): 2 tbsp</dd>
         </dl>
+        <a href="/">Back to home</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
     """
 
-@app.route("/the_get-lean_meal_plan")
+@app.route('/the_get-lean_meal_plan')
 def the_get_lean_meal_plan():
     # source: https://www.bodybuilding.com/content/meal-plan-for-every-guy.html
     return """
-    <title>Premade Meal Plans</title>
     <html>
+    <title>Premade Meal Plans</title>
     <body>
         <h2>The Get-Lean Meal Plan</h2>
         <dl>
@@ -231,17 +305,18 @@ def the_get_lean_meal_plan():
             <dd><li><strong>Mushrooms Alternate Options: </strong>3 stalks asparagus, 1 cup chopped baby spinach, 3 baby zucchini, or 1 diced plum tomato</li></dd>
             <dd><li><strong>Broccoli Alternate Options: </strong>2 cups cubed eggplant, 1 diced yellow pepper or summer squash, or 1 diced carrot + 1 diced stalk of celery</li></dd>
         </dl>
+        <a href="/">Back to home</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
     """
 
-@app.route("/the_skinny_guy_muscle-gain_plan")
+@app.route('/the_skinny_guy_muscle-gain_plan')
 def the_skinny_guy_muscle_gain_plan():
     # source: https://www.bodybuilding.com/content/meal-plan-for-every-guy.html
     return """
-    <title>Premade Meal Plans</title>
     <html>
+    <title>Premade Meal Plans</title>
     <body>
         <h2>The Skinny Guy Muscle-Gain Plan</h2>
         <dl>
@@ -305,9 +380,31 @@ def the_skinny_guy_muscle_gain_plan():
             <dd><li><strong>Tilapia Alternate Options: </strong>5 oz tuna steak, 7 oz cod, or 6 oz shrimp</li></dd>
             <dd><li><strong>Yams Alternate Options: </strong>1/3 cup Amaranth, 1/3 cup wheat berries, or 1/3 cup pearl barley</li></dd>
         </dl>
+        <a href="/">Back to home</a>
         <h6>©All Rights reserved by original authors.</h6>
     </body>
     </html>
     """
+
+@app.route('/tools')
+def tools():
+    return """
+    <html>
+    <title>Tools</title>
+    <h1>Put links of tools.</h1>
+    <a href="/">Back to home</a>
+    </html>
+    """
+
+@app.route('/about')
+def about():
+    return """
+    <html>
+    <title>About This App</title>
+    <h1>Insert App Description.</h1>
+    <a href="/">Back to home</a>
+    </html>
+    """
+    
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
