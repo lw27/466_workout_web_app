@@ -1,6 +1,7 @@
 # *** PLEASE READ! IMPORTANT: in order to make it work, you need to go to 
 # https://console.developers.google.com/ and create a OAuth client ID credential;
-# download the .json file and renamd it as "credentials.json" then put it in the working directory. ***
+# download the .json file and renamd it as "credentials.json" then put it in the working directory.
+# OR you can download the one I put on Github. ***
 
 from __future__ import print_function
 from googleapiclient.discovery import build
