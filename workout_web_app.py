@@ -105,7 +105,9 @@ def premade_workouts():
         <li><a href="/build_total_body_strength">Build Total-Body Strength</a></li>
         <li><a href="/train_your_body_in_5_minutes">Train Your Body in 5 Minutes</a></li>
         <li><a href="/improve_your_endurance">Improve Your Endurance</a></li>
+    </ul>
     <p>Pick your Workout Playlist!</p>
+    <ul>
         <li><a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a></li>
         <li><a href="https://www.youtube.com/watch?v=o3WdLtpWM_c&list=PLMmqTuUsDkRINEEFXWy7Ne2897vCdxJg1">Techno</a></li>
         <li><a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek&list=PL8fAVuusm10qMUzauh8UoYkzrRHO0KU1z">Rock</a></li>
