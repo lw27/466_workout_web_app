@@ -1,4 +1,4 @@
-# *** PLEASE READ! IMPORTANT: in order to make it work, you need to go to 
+# *** IMPORTANT: in order to make it work, you need to go to 
 # https://console.developers.google.com/ and create a OAuth client ID credential;
 # download the .json file and renamd it as "credentials.json" then put it in the working directory.
 # OR you can download the one I put on Github. ***

@@ -816,6 +816,7 @@ def scheduling():
     </body>
     <body>
     <h1>schedule</h1>
+    <!-- *** Need to figure out how to pass these name attributes to google calendar api. *** -->
     <form action="/">
         Date:
         <input type="date" name="day">
