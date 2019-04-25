@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #009933;
+}
+
+li.nav_bar {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul class="nav_bar">
+  <li class="nav_bar"><a href="/">Home</a></li>
+  <li class="dropdown">
+    <a href="/premade_workouts" class="dropbtn">Workouts</a>
+    <div class="dropdown-content">
+      <a href="/premade_workouts/warm_up">Warm Up</a>
+      <a href="/premade_workouts/build_total_body_strength">Build Total-Body Strength</a>
+      <a href="/premade_workouts/improve_your_endurance">Improve Your Endurance</a>
+    </div>
+  </li>
+  <li class="dropdown">
+      <a href="/premade_meal_plans" class="dropbtn">Meal Plans</a>
+      <div class="dropdown-content">
+        <a href="/premade_meal_plans/the_beginner_meal_plan">The Beginner Meal Plan</a>
+        <a href="/premade_meal_plans/the_get-lean_meal_plan">The Get-Lean Meal Plan</a>
+        <a href="/premade_meal_plans/the_skinny_guy_muscle-gain_plan">The Skinny Guy Muscal-Gain Plan</a>
+      </div>
+  </li>
+  <li class="dropdown">
+      <a href="/playlists" class="dropbtn">Playlists</a>
+      <div class="dropdown-content">
+        <a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a>
+        <a href="https://www.youtube.com/watch?v=o3WdLtpWM_c&list=PLMmqTuUsDkRINEEFXWy7Ne2897vCdxJg1">Tchno</a>
+        <a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek&list=PL8fAVuusm10qMUzauh8UoYkzrRHO0KU1z">Rock</a>
+        <a href="https://www.youtube.com/watch?v=VkloKZmQ3o4&list=PL6s8R-CiO2_zB85o0H4PSZeebk5P-PUWx">Country</a>
+        <a href="https://www.youtube.com/watch?v=Tztc73r8348&list=PLChOO_ZAB22WuyDODJ3kjJiU0oQzWOTyb">Pop</a>
+        <a href="https://www.youtube.com/watch?v=DNobqcfLb2Y&list=PLxvodScTx2RsV2VIDIBksBmuLFngu3mgU">Reggae</a>
+        <a href="https://www.youtube.com/watch?v=FEAZyRfgevc">EDM</a>
+        <a href="https://www.youtube.com/watch?v=EFJ7kDva7JE&list=PLxvodScTx2RtAOoajGSu6ad4p8P8uXKQk">Classical</a>
+      </div>
+  </li>
+  <li class="dropdown">
+    <a href="/tools" class="dropbtn">Tools</a>
+    <div class="dropdown-content">
+      <a href="/tools/BMI_calculator">BMI Calculator</a>
+    </div>
+  </li>
+  <li class="nav_bar"><a href="/about">About</a></li>
+</ul>
+
+</body>
+</html>
